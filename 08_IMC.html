@@ -6,7 +6,13 @@
     */
 
     //Entrada
-
+    function imc() {
+        const peso = Number(prompt('Informe seu peso:'));
+        const altura = Number(prompt('Informe sua altura:'));
+        const conta = peso / (altura * altura);
+        alert(`O cálculo de seu mmc é: ${conta.toFixed(2)}`);
+    }
+    imc()
 
     //Processamento
 

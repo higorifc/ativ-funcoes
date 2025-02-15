@@ -8,7 +8,13 @@
     */
 
     //Entrada
-
+    function areazinha(){
+        const raio = Number(prompt('Informe o raio do círculo:'));
+        const area = 3.14 * (raio * raio);
+        const peri = 2 * 3.14 * raio;
+        document.write(`O perímetro do círculo é: ${peri.toFixed(2).replace("." , ",")} <br> A área do círculo é: ${area.toFixed(2).replace("." , ",")}`);  
+    }
+    areazinha()
 
     //Processamento
 

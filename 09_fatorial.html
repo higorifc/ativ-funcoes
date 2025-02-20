@@ -6,9 +6,14 @@
 
     //Entrada
     function fatorial() {
-        
+        let conta = 1;
+        for (let contador = 1; contador <= numero; contador++) {
+            conta = conta * contador;
+        }
+        alert(`O fatorial de ${numero} é: ${conta}`);
     }
-
+    let numero = Number(prompt(`Informe um número para calcular o fatorial: `));
+    fatorial(numero);
     //Processamento
 
     

@@ -6,7 +6,20 @@
     */
 
     //Entrada
-    
+    function string() {
+        let soletrando = Array.from(palavra);
+        let quantidade = 0;
+        for (let contador = 0; contador < soletrando.length; contador++) {
+            if (soletrando[contador] == letra) {
+               quantidade++ 
+            }            
+        }
+        alert(`Tem ${quantidade} letra ${letra}.`);
+    }
+    let palavra = prompt("Informe uma palavra ou frase:").toLocaleLowerCase();
+    let letra = prompt("Informe uma letra:").toLocaleLowerCase();
+    string(palavra, letra)
+
 
     //Processamento
 

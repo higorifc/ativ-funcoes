@@ -5,7 +5,23 @@
     */
 
     //Entrada
-
+    function primo() {
+        let divisoes = 0;
+        let conta = 0;
+        for (let contador = 2; contador <= numero; contador++) {
+            conta = numero / contador;
+            if ( conta === Math.ceil(conta)) {
+                divisoes = divisoes + 1;
+            }           
+        }
+        if (divisoes == 1) {
+            alert(`Esse numero é Primo`);
+        } else {
+            alert(`Esse numero não é Primo`);
+        }
+    }
+    let numero = Number(prompt(` Informe um número:`));
+    primo(numero)
 
     //Processamento
     
